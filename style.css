@@ -1,0 +1,962 @@
+/* font family link */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:wght@200;300;400;500;600&display=swap');
+
+/* defulte css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Oswald', sans-serif;
+}
+p,li,sub,span,input,strong{
+    font-family: 'Work Sans', sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+
+}
+html{
+    font-size: 62.5%;
+}
+@media (max-width:998px){
+    html{
+    font-size: 55%;
+    }
+}
+@media (max-width:768px){
+    html{
+    font-size: 45%;
+    }
+}
+@media (max-width:768px){
+    html{
+    font-size: 45%;
+    }
+}
+/* top header css */
+.top_header{
+    background-color: #F5F5F5;
+    line-height: 5rem;
+}
+.top_header .top_header_email{
+    
+font-size: 1.5rem;
+}
+.top_header_wrapper{}
+.top_header_phone{
+    width: 22%;
+    border-left: 0.063rem solid #ddd;
+    border-right: 0.063rem solid #ddd;
+    font-size: 1.5rem;
+}
+.top_header_email{
+    width: 68%; 
+    font-family: serif;
+}
+.top_header_phone span{
+    color: #FF5200;
+    font-size: 1.8rem;
+    padding: .5rem;
+}
+.top_header_email span{
+    color: #FF5200;
+    font-size: 1.8rem;
+    padding: .5rem;
+}
+.top_header_social{
+    width: 10%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.top_header_social{
+    
+}
+.top_header_social span{
+    color:black;
+    font-size: 1.8rem;
+    padding-right: .4rem;
+    padding-left: .4rem;
+    transition: all 0.5s ease;
+}
+.top_header_social span:hover{
+    color: #FF5200;
+}
+
+/* main menu css */
+.main_menu{
+    background:#fff;
+}
+.logo{
+    width: 30%;
+}
+.logo img {
+    width: 15.5rem;
+    margin-top: .9rem;
+}
+.navber{
+    width: 70%;
+    line-height: 7rem;
+    
+}
+.navber ul{
+    text-align: right;
+}
+.navber ul li{
+    display: inline-block;
+    position: relative;
+}
+.navber ul li a {
+    padding: 0 2rem;
+    color: #1d1c1c;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    font-size: 1.5rem;
+}
+.navber ul li a.active{
+    color: #FF5200;
+}
+.navber ul li a:hover{
+    color: #FF5200;
+}
+/* submenu css */
+.navber ul li ul{
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 27rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    transform: scaleY(0);
+    transform-origin: top center;
+
+}
+.navber ul li:hover ul{
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+.navber ul li ul li{
+    display: block;
+}
+.navber ul li ul li a{
+    font-family: 'Work Sans', sans-serif;
+    display: block;
+    line-height: 2;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+.navber ul li ul li a::before{
+    content: "";
+    width: 0;
+    height: .2rem;
+    background: #ff5200;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+    transition: all 0.4s ease;
+}
+.navber ul li ul li:hover a::before{
+    width: 2rem;
+}
+/* slider section */
+.slider_section{
+    background: url(./assets/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 59.25rem;
+}
+.slider_title{
+  
+}
+.slider_title h2{
+    width: 44.5rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 10rem 0;
+}
+.slider_title p {
+    width: 51.313rem;
+    margin-bottom: 6rem;
+    margin-top: -7.4rem;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.slider_btn a {
+    background: #ff5200;
+    padding: 1.5rem 4.5rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+.slider_btn a:hover{
+    background: #252525;
+}
+.indicators{
+    position: absolute;
+    left: 50%;
+    bottom: 10.15rem;
+    transform: translateX(-50%);
+}
+.indicators span{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.125rem solid #fff;
+    cursor: pointer;
+}
+.indicators .active{
+    background: #ff5200!important;
+}
+/* service section  */
+.service_section{
+    padding: 5rem 0;
+    background: #F5F6F6;
+}
+.service_wrapper{}
+.service_items{
+    width: 23%;
+    background: #fff;
+    margin-right: 2rem;
+    transition: all 0.4s ease;
+}
+.service_items.active{
+    background: #FF5200;
+    color: #fff;
+}
+.service_items.active h5{
+    color: #fff;
+}
+.service_items.active p{
+    color: #fff;
+}.service_items.active span{
+    color: #fff;
+}
+.service_items.active a{
+    color: #fff;
+}
+.service_items span{
+    font-size: 6rem;
+    text-align: center;
+    color: #ff5200;
+    padding: 3rem;
+    display: block;
+}
+
+.service_items h5{
+    font-size: 2rem;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    display: block;
+    margin-left: 4.2rem;
+    line-height: 1.4;
+    letter-spacing: .1rem;
+    color: #35363A;
+    text-transform: uppercase;
+}
+.service_items p{
+    text-align: center;
+    width: 20rem;
+    margin-bottom: 4rem;
+    display: block;
+    margin-left: 4.2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #656565;
+
+}
+.service_items a{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    margin-top: -2.99rem;
+    font-family: 'Work Sans', sans-serif;
+    color: #ff5200;
+    font-size: 1.5rem;
+}
+.service_items:hover{
+    background: #ff5200;
+    color: #fff;
+}
+.service_items:hover h5 {
+    color: #fff;
+}
+.service_items:hover p{
+    color: #fff;
+}
+.service_items:hover span {
+    color: #fff;
+}
+.service_items:hover a{
+    color: #fff;
+}
+/* work section css */
+.work_section{
+    padding: 5rem 0;
+}
+.work_img{
+    width: 48%;
+}
+.work_items{
+    width: 48%;
+}
+.work_img img{
+    width: 100%;
+    height: 43.875rem;
+}
+.work_title h2 {
+    font-size: 3.6rem;
+    padding: 1.5rem 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.work_title p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #656565;
+    margin-bottom: 3rem;
+}
+
+.work_list_left {
+    margin-bottom: 4rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.work_list_left ul li {
+    line-height: 1.9;
+    font-size: 1.8rem;
+    transition: all 0.5s ease;
+}
+
+.work_list_left i {
+    margin-right: 1rem;
+}
+.work_list_right ul li {
+    line-height: 1.9;
+    font-size: 1.8rem;
+    font-family: 'Work Sans', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.work_list_right i {
+    margin-right: 0.625rem;
+}
+.work_list_left li:hover{
+    color: #FF5200;
+}
+.work_list_right li:hover{
+    color: #FF5200;
+}
+/* cprojccts css */
+.c_project_section{
+    background: linear-gradient(#0404048a, #3a3a3780), url(./assets/cproject.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15.375rem;
+}
+.c_p_items{
+    width: 25%;
+}
+.c_p_items span{
+    font-size: 5.125rem;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+.c_p_items h2{
+    font-size: 4.25rem;
+    color: #fff;
+    text-align: center;
+}
+.c_p_items h5{
+    font-size: 2.125rem;
+    color: #fff;
+    text-align: center;
+}
+/* more section css */
+.more_section{
+    padding: 10rem 0;
+    background: #F5F6F6;
+}
+.more_title{
+    text-align: center;
+}
+.more_title h2{
+    font-size: 4rem;
+    border-bottom: 0.313rem solid #ff5200;
+    width: 24.938rem;
+    margin-left: 47.063rem;
+    font-weight: 500;
+    margin-bottom: 0.938rem;
+    letter-spacing: .05rem;
+}
+.more_title p{
+    width: 48.25rem;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: #656565;
+    margin-bottom: 5.875rem;
+}
+.more_items{
+    width: 23%;
+    margin-right: 2.2rem;
+}
+.more_items img {
+    height: 21.625rem;
+}
+.more_items h2 {
+    margin: 0.625rem 0rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.more_items p{
+    font-size: 1.5rem;
+    color: #656565;
+    line-height: 1.5;
+}
+/* price section */
+.price_section{
+    padding: 3.125rem 0;
+}
+.price_items {
+    width: 31%;
+    background: #fff;
+    border: 0.063rem solid #f9f9f9ba;
+    margin-right: 1.563rem;
+    box-shadow: 0rem 0rem 0.245rem 0rem #ddd;
+}
+.price h2{
+    font-size: 4rem;
+    border-bottom: 5px solid #ff5200;
+    width: 20.063rem;
+    margin-left: 48.188rem;
+    font-weight: 500;
+    margin-bottom: 0.938rem;
+    letter-spacing: .05rem;
+}
+.price_items h2{
+    padding:1.875rem 0rem 0rem 1.25rem;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: -1.25rem;
+}
+.price_items h3{
+    padding:1.875rem 0rem 0rem 1.25rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.price_items ul{
+    padding: 1.25rem;
+}
+.price_items ul li{
+    line-height: 2.2;
+    font-size: 1.5rem;
+    color: #656565;
+}
+.price_items ul li i {
+    color: #ff5200;
+    margin-right: 0.313rem;
+}
+.price_items sub {
+    font-size: 2rem;
+}
+.pricebtn{
+    margin-left:1.375rem;
+    margin-bottom: 4.125rem;
+    margin-top: 1.875rem;
+}
+/* chack section css */
+.check_section{
+    padding: 5rem 0;
+}
+.chack_items{
+    width: 50%;
+}
+.chack_section_content{
+    width: 50%;
+    background: #222222;
+    color: #fff;
+}
+.chack_section_content .title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-left: 3.75rem;
+    margin-top: 10rem;
+    letter-spacing: .05rem;
+}
+.chack_section_content .subtitle{
+    margin-left: 3.75rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+.icon_wrapper {
+    margin-top: 6rem;
+    margin-bottom: 6.4rem;
+}
+.icon_left{
+    width: 50%;
+}
+.icon_left span {
+    margin-left: 4.375rem;
+    font-size: 7rem;
+    color: #ff5200;
+    margin-right: 1.25rem;
+}
+.icon_left h2 {
+    margin-left: 3.75rem;
+    font-size: 2rem;
+    line-height: 1.8;
+    letter-spacing: .03rem;
+    transition: all .5s ease-in;
+}
+.icon_left h2:hover{
+    color: #ff5200;
+}
+.icon_left p {
+    margin-left: 3.75rem;
+    font-size: 1.6rem;
+    margin-bottom:3.125rem;
+    margin-top: 0.438rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.icon_right{
+    width: 50%;
+}
+.icon_right span{
+    font-size: 7rem;
+    color: #ff5200;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.icon_right h2{
+    font-size: 2rem;
+    margin-left: 2rem;
+    line-height: 1.8;
+    letter-spacing: .03em;
+    transition: all .5s ease-in;
+}
+.icon_right h2:hover{
+    color: #ff5200;
+}
+.icon_right p{
+    font-size: 1.6rem;
+    margin-bottom: 3.125rem;
+    margin-left: 7.5rem;
+    margin-top: 0.438rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+/* team section */
+.team_section{
+    padding: 3.125rem 0;
+}
+.team h2{
+    font-size: 4rem;
+    border-bottom: 5px solid #ff5200;
+    width: 27.438rem;
+    margin-left: 45.188rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    letter-spacing: .05em;
+}
+.team_items{
+    width: 23%;
+    margin-right: 2rem;
+}
+.team_items{}
+.img_content{}
+.team_content{
+    border-left:0.063rem solid #ddd;
+    border-bottom:0.063rem solid #ddd;
+    border-right:0.063rem solid #ddd;
+}
+.team_items h2 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+.team_items p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #656565;
+    padding: 1rem;
+    margin-top: -1rem;
+}
+.teambtn{
+    margin-left: 47.25rem;
+    margin-top: 7.25rem;
+    margin-bottom: 5rem;
+}
+/* our project section css */
+.our_project_section{
+    padding: 5rem 0;
+    background: #F5F6F6;
+}
+.project h2 {
+    font-size: 4rem;
+    border-bottom: .313rem solid #ff5200;
+    width: 33.063rem;
+    margin-left: 42.625rem;
+    font-weight: 500;
+    margin-bottom: .938rem;
+    letter-spacing: .05rem;
+}
+.project_items{
+    width: 31%;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.project_content span{
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.project_content {
+    position: absolute;
+    top: 15.313rem;
+    left: 1.625rem;
+    color: rgb(238, 236, 236);
+}
+.project_content h3{
+    width: 23.625rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.project_content p{
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+}
+/* .project_items img:hover .project_content{
+    transform: scaleY(5);
+} */
+/* News secton css */
+.our_news_section{
+    padding: 3.125rem 0;
+}
+.news h2 {
+    width: 33rem;
+    margin-left: 42.438rem;
+}
+.news_items{
+    width: 31%;
+    margin-right: 1.25rem;
+}
+.news_items img{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+.news_items img:hover{
+    transform: scale(1.05);
+}
+.news_content{
+    border-left:0.063rem solid #ddd;
+    border-bottom:0.063rem solid #ddd;
+    border-right:0.063rem solid #ddd;
+    padding: 1.25rem;
+}
+.news_content ul{}
+.news_content ul li {
+    display: inline-block;
+    margin-right: 1.25rem;
+    color: #656565;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.news_content ul li a{
+    color: #656565;
+    font-family: 'Work Sans', sans-serif;
+}
+.news_content ul li a:before {
+    content: "";
+    border: 0.063rem solid #ff5200;
+    width: 0.938rem;
+    vertical-align: middle;
+    display: block;
+    position: relative;
+    top: 0.875rem;
+    left: -1.688rem;
+}
+.news_content h3{}
+.news_content h3 a{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2d2d2d;
+    padding: 1rem;
+    letter-spacing: .05rem;
+    transition: all 0.5s ease-in;
+}
+.news_content h3:hover a{
+    color: #ff5200;
+}
+.news_content p{
+    font-size: 1.5rem;
+    color: #656565;
+    padding: 1rem;
+    line-height: 1.5;
+}
+.news_content .read{
+    padding: 1rem;
+    color: #ff5200;
+    letter-spacing: .03rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+}
+/* contact section css */
+.contact_section{
+    padding: 5rem 0;
+}
+.contact_wrapper {
+    background: #ff5200;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #fff;
+    position: relative;
+    top: 10rem;
+}
+.contact_items{
+    width: 31%;
+}
+.contact_items .ctitle{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.contact_items h2{
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+.contact_items p{
+    line-height: 1.7;
+    font-size: 1.5rem;
+}
+.contact_items .subscribe {
+    margin-left: 3rem;
+    padding: 1.6rem 1.6rem;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+}
+.contact_items .sbtn {
+    padding: 1.6rem 1.6rem;
+    border-radius: 2.875rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 19.938rem;
+    color: #fff;
+    background: #000;
+    font-weight: 600;
+}
+.contact_items ul{}
+.contact_items ul li{
+    display: inline-block;
+}
+.contact_items ul li a{
+    font-size: 2rem;
+}
+.contact_items ul li a i {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 0.063rem solid #ddd;
+    padding: 1.1rem;
+    color: #fff;
+    transition: all .5s ease-in;
+    margin-right: .5rem;
+}
+.contact_items ul li a i:hover{
+    background: #fff;
+    color: #000;
+}
+/* footer section css */
+.footer_section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #1A1A1A;
+    border-bottom: .063rem  solid rgba(74, 74, 74, 0.5)
+}
+.footer_items{
+    width: 25%;
+    color: #ababab;
+    margin-top: 8rem;
+}
+.footericon ul li a i{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    border: 0.063rem  solid #ddd;
+    padding: 1rem;
+    color: #fff;
+    transition: all .5s ease-in;
+    margin-top: 4rem;
+    margin-right: 1rem;
+}
+.footericon ul li a i:hover{
+    background-color: #fff;
+    color: #000;
+}
+.footer_items h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.footer_items p {
+    line-height: 1.7;
+    font-size: 1.5rem;
+    width: 25rem;
+}
+.footer_items ul{}
+.footericon ul li{
+    display: inline-block;
+    margin-top: 1.875rem;
+}
+.address ul li i {
+    color: #ff5200;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+.address ul li{
+    display: block;
+}
+
+li.addl {
+    margin-left: 3.563rem;
+}
+.footer_items ul li {
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
+}
+.footer_items ul li a{
+    color: #ababab;
+    line-height: 1.7;
+    letter-spacing: .03rem;
+    font-weight: 400;
+    transition: all .5s ease-in;
+    font-size: 1.5rem;
+}
+.link{
+    border-bottom: .063rem dashed rgba(74, 74, 74, 0.5);
+    margin-top: .5rem;
+    width: 90%;
+}
+.footer_items ul li:hover a{
+    color: #ff5200;
+}
+.ftitle{
+    width: 30%;
+}
+.fcontent{
+    width: 70%;
+}
+.ftitle {
+    background: #313131;
+    width: 7rem;
+    text-align: center;
+    padding: 0.438rem;
+    margin-bottom: 2rem;
+}
+.ftitle strong{
+    font-size: 2.8rem;
+    color: #fff;
+}
+.ftitle span{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.fcontent h3 {
+    font-weight: 400;
+    letter-spacing: .01rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    transition: all .5s ease-in;
+    font-size: 1.5rem;
+    color: #ababab;
+}
+.fcontent:hover h3{
+    color: #ff5200;
+}
+.fcontent span {
+    font-size: 1.3rem;
+}
+.fcontent span i{
+    font-size: 1.5rem;
+}
+/* copy right css */
+.copyright_section{
+    background: #1A1A1A;
+    padding: 2rem;
+}
+.copy_left{
+    width: 50%;
+}
+.copy_right{
+    width: 50%;
+}
+.copy_left span{
+    font-size: 1.5rem;
+    color: #ababab;
+}
+.copy_left span b{
+    color:#FF5200;
+}
+.copy_right ul {
+    text-align: right;
+}
+.copy_right ul li{
+    display: inline-block;
+}
+.copy_right ul li a{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    color: #ababab;
+    letter-spacing: .02rem;
+    font-family: 'Work Sans', sans-serif;
+}
